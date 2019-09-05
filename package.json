@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "precommit": "lint-staged",
-    "test": "mocha ./test/index.js",
+    "test": "mocha ./test/index.js --reporter mochawesome",
     "dev": "webpack-dev-server",
     "build-dev": "cross-env NODE_ENV=development webpack --display-chunks --progress --colors --profile --bail",
     "build-test": "cross-env NODE_ENV=test webpack --display-chunks --progress --colors --profile --bail",
@@ -51,6 +51,7 @@
     "husky": "^3.0.2",
     "image-webpack-loader": "^5.0.0",
     "mini-css-extract-plugin": "^0.8.0",
+    "mochawesome": "^4.1.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
