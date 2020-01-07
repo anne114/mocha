@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "precommit": "lint-staged",
-    "test": "mocha ./test/index.js --reporter mochawesome",
+    "test": "mocha ./test/index.test.js --reporter mochawesome",
     "dev": "webpack-dev-server",
     "build-dev": "cross-env NODE_ENV=development webpack --display-chunks --progress --colors --profile --bail",
     "build-test": "cross-env NODE_ENV=test webpack --display-chunks --progress --colors --profile --bail",
